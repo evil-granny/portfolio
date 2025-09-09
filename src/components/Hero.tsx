@@ -20,7 +20,7 @@ export function Hero() {
           </h1>
 
           {/* Title */}
-          <h2 className="text-2xl md:text-3xl font-semibold text-slate-200 mb-6 animate-slide-up animation-delay-200">
+          <h2 className="text-2xl md:text-3xl font-semibold bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent mb-6 animate-slide-up animation-delay-200">
             Senior Java Developer
           </h2>
 

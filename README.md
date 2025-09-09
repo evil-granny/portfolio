@@ -34,7 +34,7 @@ A blazing fast, performance-optimized portfolio website built with Next.js 14 an
 npm install
 
 # Run development server
-npm run dev
+le
 
 # Build for production
 npm run build

@@ -93,7 +93,7 @@ export function Projects() {
             Professional Projects
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-400 to-emerald-400 mx-auto mb-4"></div>
-          <p className="text-slate-400 max-w-2xl mx-auto">
+          <p className="text-slate-200 max-w-2xl mx-auto">
             Enterprise-level projects demonstrating expertise in scalable backend systems, 
             microservices architecture, and high-performance optimization.
           </p>
