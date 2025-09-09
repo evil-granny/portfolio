@@ -169,6 +169,38 @@ export function About() {
                 </div>
               </div>
             </div>
+
+            {/* Home Away Experience */}
+            <div className="bg-slate-800/30 border border-slate-700 rounded-lg p-6">
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                <div>
+                  <h4 className="text-xl font-semibold text-white">Trainee Java Developer</h4>
+                  <p className="text-blue-400 font-medium">Home Away (via SoftServe)</p>
+                </div>
+                <span className="text-slate-400 text-sm md:text-base">8 months</span>
+              </div>
+              <p className="text-slate-300 mb-4">
+                Travel accommodation booking platform built with microservices architecture.
+              </p>
+              <div className="grid md:grid-cols-2 gap-4 text-sm text-slate-300">
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+                  <span>Implemented microservices architecture</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+                  <span>Designed RESTful API endpoints</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+                  <span>Created comprehensive unit tests</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+                  <span>Optimized pagination and performance</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
