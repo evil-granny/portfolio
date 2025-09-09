@@ -6,6 +6,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is a high-performance portfolio website for Denys Ohorodnik, a Senior Java Developer. Built with Next.js 14 using static export for optimal performance and hosting flexibility. The architecture emphasizes SEO optimization, PWA capabilities, and smooth user experience with custom animations.
 
+**Live Website**: https://portfolio-delta-gilt-84.vercel.app/
+**Repository**: https://github.com/evil-granny/portfolio
+
 ## Build System and Commands
 
 ### Development Workflow
@@ -119,3 +122,53 @@ Custom CSS classes in globals.css provide:
 - Component imports use absolute paths from `@/components/`
 - Lucide React icons for consistent iconography
 - Next.js font optimization for Inter typeface
+
+## Deployment Configuration
+
+### Current Production Status
+- **Live URL**: https://portfolio-delta-gilt-84.vercel.app/
+- **Platform**: Vercel with automatic GitHub integration
+- **Build Status**: ✅ Successfully deployed
+- **Last Updated**: December 2024
+
+### Vercel Build Settings
+```
+Build Command: npm run build
+Output Directory: (Next.js default - auto-detected)
+Install Command: npm install  
+Development Command: next dev
+Framework: Next.js (auto-detected)
+```
+
+### Critical Build Configuration
+The project uses a custom postbuild script to resolve Vercel deployment issues:
+
+```json
+"scripts": {
+  "build": "next build",
+  "postbuild": "node -e \"const fs = require('fs'); const manifest = { version: 3, pages404: true, caseSensitive: false, basePath: '', redirects: [], headers: [], dynamicRoutes: [], staticRoutes: [{ page: '/', regex: '^/(?:/)?$', routeKeys: {}, namedRegex: '^/(?:/)?$' }], dataRoutes: [], rewrites: [] }; fs.writeFileSync('out/routes-manifest.json', JSON.stringify(manifest));\""
+}
+```
+
+This automatically generates the required `routes-manifest.json` file in the `out/` directory after Next.js build.
+
+### Deployment Troubleshooting
+
+#### Common Issues Resolved:
+1. **Routes-manifest.json error**: Fixed by using Next.js default output directory detection and custom postbuild script
+2. **ESLint errors**: Fixed unescaped apostrophes in JSX (`'` → `&apos;`)  
+3. **Viewport metadata warnings**: Moved viewport configuration to separate export in Next.js 14
+4. **Directory conflicts**: Resolved conflicting `/app` vs `/src/app` structure
+
+#### Deployment Best Practices:
+- Never override "Output Directory" in Vercel for static export projects
+- Use `npm run build` as build command (includes postbuild automatically)
+- Ensure all components use proper HTML entity escaping
+- Test locally with `npm run build` before deploying
+- Monitor build logs for any deprecation warnings
+
+### Static Export Notes
+- Uses `output: 'export'` in next.config.js for static site generation
+- Generates optimized static files in `/out` directory
+- Compatible with any static hosting platform
+- Maintains all Next.js optimizations while being fully static

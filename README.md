@@ -2,6 +2,8 @@
 
 A blazing fast, performance-optimized portfolio website built with Next.js 14 and Tailwind CSS.
 
+🌐 **Live Website**: https://portfolio-delta-gilt-84.vercel.app/
+
 ## 🚀 Performance Features
 
 - **Server-Side Rendering (SSR)** - Lightning fast initial load
@@ -47,16 +49,29 @@ npm run export
 ## 📁 Project Structure
 
 ```
-├── app/
-│   ├── globals.css          # Global styles
-│   ├── layout.tsx          # Root layout with metadata
-│   └── page.tsx            # Main portfolio page
+├── src/
+│   ├── app/
+│   │   ├── globals.css      # Global styles with animations
+│   │   ├── layout.tsx       # Root layout with SEO metadata
+│   │   └── page.tsx         # Main portfolio page
+│   └── components/          # Portfolio components
+│       ├── Navigation.tsx   # Fixed navigation with smooth scroll
+│       ├── Hero.tsx         # Hero section with intro
+│       ├── About.tsx        # Experience and career highlights
+│       ├── Skills.tsx       # Technical skills with progress bars
+│       ├── Projects.tsx     # Professional project showcase
+│       ├── Contact.tsx      # Contact information and availability
+│       └── Footer.tsx       # Footer with social links
 ├── public/
-│   └── favicon.ico         # Site favicon
-├── next.config.js          # Next.js configuration
-├── tailwind.config.js      # Tailwind CSS configuration
-├── tsconfig.json           # TypeScript configuration
-└── package.json            # Dependencies and scripts
+│   ├── manifest.json        # PWA manifest
+│   ├── robots.txt          # SEO robots file
+│   ├── sitemap.xml         # XML sitemap
+│   └── resume.pdf          # Downloadable resume
+├── next.config.js          # Next.js static export configuration
+├── tailwind.config.js      # Custom animations and theme
+├── tsconfig.json           # TypeScript with path aliases
+├── CLAUDE.md               # Development guidance for Claude Code
+└── package.json            # Dependencies and build scripts
 ```
 
 ## 🔧 Configuration
@@ -77,21 +92,39 @@ npm run export
 
 ## 🌐 Deployment
 
-### Vercel (Recommended)
-```bash
-npm install -g vercel
-vercel --prod
+### Live Deployment ✅
+- **Current URL**: https://portfolio-delta-gilt-84.vercel.app/
+- **Platform**: Vercel with automatic deployments
+- **Build Status**: ✅ Successfully deployed
+- **Repository**: https://github.com/evil-granny/portfolio
+
+### Vercel Configuration
+```javascript
+// Vercel Build Settings
+Build Command: npm run build
+Output Directory: (Next.js default - auto-detected)
+Install Command: npm install
+Development Command: next
 ```
 
-### Netlify
+### Build Process
+```bash
+# Next.js build with static export
+npm run build
+# Automatically runs postbuild script to generate routes-manifest.json
+```
+
+### Alternative Deployments
+
+#### Netlify
 ```bash
 npm run build
 # Deploy the 'out' folder
 ```
 
-### Static Hosting
+#### Static Hosting
 ```bash
-npm run export
+npm run build
 # Upload the 'out' folder to any static host
 ```
 
