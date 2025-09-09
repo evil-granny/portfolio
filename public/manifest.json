@@ -1,0 +1,20 @@
+{
+  "name": "Denys Ohorodnik - Senior Java Developer",
+  "short_name": "Denys Ohorodnik",
+  "description": "Senior Java Developer Portfolio - Backend Engineering Expert",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#1f2937",
+  "background_color": "#0f172a",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "categories": ["business", "productivity", "developer"],
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48 32x32 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}
