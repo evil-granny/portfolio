@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "node -e \"const fs = require('fs'); const manifest = { version: 3, pages404: true, caseSensitive: false, basePath: '', redirects: [], headers: [], dynamicRoutes: [], staticRoutes: [{ page: '/', regex: '^/(?:/)?$', routeKeys: {}, namedRegex: '^/(?:/)?$' }], dataRoutes: [], rewrites: [] }; fs.writeFileSync('out/routes-manifest.json', JSON.stringify(manifest));\"",
     "start": "next start",
     "lint": "next lint",
     "type-check": "tsc --noEmit"
