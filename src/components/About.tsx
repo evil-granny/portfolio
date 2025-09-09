@@ -61,7 +61,7 @@ export function About() {
               </div>
               <div className="flex items-center gap-3">
                 <CheckCircle2 className="w-5 h-5 text-emerald-400" />
-                <span className="text-slate-300">Master's Degree in Software Engineering</span>
+                <span className="text-slate-300">Master&apos;s Degree in Software Engineering</span>
               </div>
               <div className="flex items-center gap-3">
                 <CheckCircle2 className="w-5 h-5 text-emerald-400" />

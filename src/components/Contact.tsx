@@ -39,11 +39,11 @@ export function Contact() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Let's Work Together
+            Let&apos;s Work Together
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-400 to-emerald-400 mx-auto mb-6"></div>
           <p className="text-slate-400 max-w-2xl mx-auto text-lg">
-            Ready to build something amazing? I'm always interested in discussing new opportunities, 
+            Ready to build something amazing? I&apos;m always interested in discussing new opportunities, 
             challenging projects, and innovative solutions in Java development.
           </p>
         </div>
@@ -156,7 +156,7 @@ export function Contact() {
               Ready to Start a Project?
             </h3>
             <p className="text-slate-300 mb-6 max-w-md">
-              Let's discuss how I can help bring your ideas to life with robust, scalable Java solutions.
+              Let&apos;s discuss how I can help bring your ideas to life with robust, scalable Java solutions.
             </p>
             <a
               href="mailto:den.ohorodnik@gmail.com"

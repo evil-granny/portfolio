@@ -9,7 +9,7 @@ export function Hero() {
         <div className="text-center">
           {/* Greeting */}
           <p className="text-slate-400 text-lg mb-4 animate-fade-in">
-            Hello, I'm
+            Hello, I&apos;m
           </p>
           
           {/* Name */}
