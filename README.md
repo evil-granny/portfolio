@@ -8,6 +8,7 @@ A blazing fast, performance-optimized portfolio website built with Next.js 14 an
 
 - **Server-Side Rendering (SSR)** - Lightning fast initial load
 - **Speed Insights** - Real-time performance monitoring with Vercel Analytics
+- **Web Analytics** - Comprehensive page view and user behavior tracking
 - **Custom Favicon** - Professional branding with "DO" initials
 - **Minimal JavaScript** - Only essential interactions
 - **Optimized Images** - WebP format with lazy loading
@@ -180,11 +181,12 @@ The portfolio is fully responsive with:
 
 ## ⚡ Performance Monitoring
 
-### Speed Insights Integration
+### Analytics & Performance Integration
+- **Vercel Web Analytics** - Page views, unique visitors, and user behavior tracking
 - **Vercel Speed Insights** - Real-time performance data collection
 - **Core Web Vitals** - LCP, FID, CLS metrics tracking
 - **Device Performance** - Mobile vs Desktop analytics
-- **Geographic Analytics** - Performance by region
+- **Geographic Analytics** - Performance and visitor data by region
 
 Monitor your site's performance with:
 - Google PageSpeed Insights
@@ -196,7 +198,8 @@ Monitor your site's performance with:
 
 ```json
 {
-  "@vercel/speed-insights": "^1.x.x",
+  "@vercel/analytics": "^1.5.0",
+  "@vercel/speed-insights": "^1.2.0",
   "next": "14.2.0",
   "tailwindcss": "^3.3.0",
   "typescript": "^5.x.x"

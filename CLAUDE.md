@@ -91,12 +91,14 @@ Comprehensive SEO setup in `src/app/layout.tsx`:
 - Staggered animation entrance effects for visual appeal
 - Focus management for accessibility compliance
 
-### Performance Monitoring
-- **Vercel Speed Insights**: Real-time performance monitoring integrated in `src/app/layout.tsx:60`
-- **Analytics Collection**: Automatic Core Web Vitals tracking (LCP, FID, CLS)
+### Analytics & Performance Monitoring
+- **Vercel Web Analytics**: Page view and visitor tracking integrated in `src/app/layout.tsx:62`
+- **Vercel Speed Insights**: Real-time performance monitoring integrated in `src/app/layout.tsx:61`
+- **Analytics Collection**: Page views, unique visitors, referrer data, and user behavior patterns
+- **Performance Collection**: Automatic Core Web Vitals tracking (LCP, FID, CLS)
 - **Device Analytics**: Performance breakdowns by mobile vs desktop
-- **Geographic Insights**: Performance data by region
-- **Dependency**: `@vercel/speed-insights/next` package for Next.js integration
+- **Geographic Insights**: Performance and visitor data by region
+- **Dependencies**: `@vercel/analytics/next` and `@vercel/speed-insights/next` packages
 
 ## Content Management
 
