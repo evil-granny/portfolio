@@ -70,7 +70,12 @@ Comprehensive SEO setup in `src/app/layout.tsx`:
 ### Static Assets
 - **Resume**: `/public/resume.pdf` linked from Hero section
 - **SEO files**: `robots.txt`, `sitemap.xml` configured for production domain
-- **Favicon**: Standard favicon.ico for browser and PWA icons
+- **Favicon System**: Complete favicon setup with multiple formats:
+  - `/public/favicon.ico` - Main browser favicon (16x16, 32x32, 48x48)
+  - `/public/favicon.svg` - Vector favicon (32x32) with "DO" branding
+  - `/public/icon-192.svg` - PWA icon (192x192) for app installation
+  - `/public/icon-512.svg` - PWA icon (512x512) for high-res displays
+- **Icon Design**: Dark slate background (#1f2937) with blue accent (#60a5fa) "DO" initials
 
 ## Performance Optimizations
 
@@ -85,6 +90,13 @@ Comprehensive SEO setup in `src/app/layout.tsx`:
 - Custom scrollbar styling for consistent cross-browser experience
 - Staggered animation entrance effects for visual appeal
 - Focus management for accessibility compliance
+
+### Performance Monitoring
+- **Vercel Speed Insights**: Real-time performance monitoring integrated in `src/app/layout.tsx:60`
+- **Analytics Collection**: Automatic Core Web Vitals tracking (LCP, FID, CLS)
+- **Device Analytics**: Performance breakdowns by mobile vs desktop
+- **Geographic Insights**: Performance data by region
+- **Dependency**: `@vercel/speed-insights/next` package for Next.js integration
 
 ## Content Management
 

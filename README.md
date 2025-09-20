@@ -7,10 +7,13 @@ A blazing fast, performance-optimized portfolio website built with Next.js 14 an
 ## 🚀 Performance Features
 
 - **Server-Side Rendering (SSR)** - Lightning fast initial load
+- **Speed Insights** - Real-time performance monitoring with Vercel Analytics
+- **Custom Favicon** - Professional branding with "DO" initials
 - **Minimal JavaScript** - Only essential interactions
 - **Optimized Images** - WebP format with lazy loading
 - **CSS Optimizations** - Purged and minified Tailwind
 - **SEO Optimized** - Structured data and meta tags
+- **PWA Ready** - Progressive Web App with installable icons
 
 ## 🛠 Tech Stack
 
@@ -34,7 +37,7 @@ A blazing fast, performance-optimized portfolio website built with Next.js 14 an
 npm install
 
 # Run development server
-le
+npm run dev
 
 # Build for production
 npm run build
@@ -63,7 +66,11 @@ npm run export
 │       ├── Contact.tsx      # Contact information and availability
 │       └── Footer.tsx       # Footer with social links
 ├── public/
-│   ├── manifest.json        # PWA manifest
+│   ├── favicon.ico          # Main browser favicon
+│   ├── favicon.svg          # Vector favicon (32x32)
+│   ├── icon-192.svg         # PWA icon (192x192)
+│   ├── icon-512.svg         # PWA icon (512x512)
+│   ├── manifest.json        # PWA manifest with icons
 │   ├── robots.txt          # SEO robots file
 │   ├── sitemap.xml         # XML sitemap
 │   └── resume.pdf          # Downloadable resume
@@ -99,12 +106,12 @@ npm run export
 - **Repository**: https://github.com/evil-granny/portfolio
 
 ### Vercel Configuration
-```javascript
-// Vercel Build Settings
+```bash
+# Vercel Build Settings
 Build Command: npm run build
 Output Directory: (Next.js default - auto-detected)
 Install Command: npm install
-Development Command: next
+Development Command: npm run dev
 ```
 
 ### Build Process
@@ -173,11 +180,28 @@ The portfolio is fully responsive with:
 
 ## ⚡ Performance Monitoring
 
+### Speed Insights Integration
+- **Vercel Speed Insights** - Real-time performance data collection
+- **Core Web Vitals** - LCP, FID, CLS metrics tracking
+- **Device Performance** - Mobile vs Desktop analytics
+- **Geographic Analytics** - Performance by region
+
 Monitor your site's performance with:
 - Google PageSpeed Insights
 - Lighthouse audits
 - Core Web Vitals
 - Real User Monitoring (RUM)
+
+## 📦 Key Dependencies
+
+```json
+{
+  "@vercel/speed-insights": "^1.x.x",
+  "next": "14.2.0",
+  "tailwindcss": "^3.3.0",
+  "typescript": "^5.x.x"
+}
+```
 
 ---
 
