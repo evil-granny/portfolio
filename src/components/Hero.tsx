@@ -43,7 +43,7 @@ export function Hero() {
               View My Work
             </a>
             <a
-              href="/resume.pdf"
+              href="/Resume_Denys_Ohorodnik.pdf"
               target="_blank"
               className="bg-slate-800 hover:bg-slate-700 text-slate-200 px-8 py-3 rounded-lg font-medium transition-colors duration-200 flex items-center justify-center gap-2 border border-slate-700"
             >
